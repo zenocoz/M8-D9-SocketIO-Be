@@ -39,7 +39,7 @@ server.use(genericErrorHandler)
 console.log(listEndpoints(server))
 
 mongoose
-  .connect(process.env.MONGO_CONNECTION + "linkedin", {
+  .connect(process.env.MONGO_CONNECTION + "/linkedin", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
